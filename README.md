@@ -1,132 +1,131 @@
 # VMNorth.com
 
-VMNorth.com is a production-oriented multilingual website and product platform for a digital studio. This public portfolio repository is prepared for recruiters, hiring managers, and non-technical reviewers.
+**Multilingual digital product studio platform with public sales flows, real-time visitor communication, and a secure operating workspace.**
 
-The source code is intentionally not included because the project contains private implementation details and production configuration. This repository focuses on the product, architecture, engineering scope, and visible results.
+[Live website](https://vmnorth.com) · [Pricing](https://vmnorth.com/pricing) · [Project brief](https://vmnorth.com/brief) · [Selected work](https://vmnorth.com/work/brand-websites)
 
-## Live Demo
+![VMNorth.com product overview](./screenshots/overview.png)
 
-[https://vmnorth.com](https://vmnorth.com)
+## Product
 
-## Suggested Live Review Path
+VMNorth.com is a production-oriented platform for presenting services, converting visitors into qualified leads, publishing project work, supporting app releases, and operating the business from an internal admin workspace.
 
-- Homepage: [https://vmnorth.com/](https://vmnorth.com/)
-- Pricing surface: [https://vmnorth.com/pricing](https://vmnorth.com/pricing)
-- Guided brief intake: [https://vmnorth.com/brief](https://vmnorth.com/brief)
-- Dynamic work case example: [https://vmnorth.com/work/brand-websites](https://vmnorth.com/work/brand-websites)
-- App release surface: [https://vmnorth.com/apps/flipclock-display](https://vmnorth.com/apps/flipclock-display)
-
-## Product Overview
-
-VMNorth.com is more than a static portfolio website. It combines a public marketing experience, product pages, lead intake, visitor communication, admin operations, localization, and production deployment thinking in one cohesive product surface.
-
-Key product areas:
-
-- Multilingual public website with English, French, Spanish, and Russian routes
-- Services, pricing, process, regional market, and portfolio project pages
-- Guided project brief intake flow for potential clients
-- Visitor support chat with session restore and follow-up flow
-- Admin workspace for lead handling, saved briefs, analytics review, client observability controls, content copy control, operational health, availability, profile updates, and portfolio publishing
-- App catalog with support, privacy, and release-oriented pages
-- Production documentation, deployment runbooks, release checklist, and smoke checks
+The public experience supports English, French, Spanish, and Russian routes. The operational side includes visitor chat, saved project briefs, portfolio publishing, analytics summaries, content controls, release status, health monitoring, and account security.
 
 ## My Role
 
-I owned the project end to end:
+**End-to-end product ownership:** product structure, UX, visual system, frontend, backend APIs, persistence, authentication, localization, deployment, release verification, and engineering documentation.
 
-- Product structure and UX flows
-- Frontend implementation
-- Backend API and persistence design
-- Real-time chat behavior
-- Admin authentication flow
-- Localization model
-- Deployment and release process
-- Documentation for engineering and hiring review
+## Core Stack
 
-## Tech Stack
+| Frontend | Backend | Data and realtime | Delivery |
+| --- | --- | --- | --- |
+| React, TypeScript, React Router, Vite | Node.js HTTP server | PostgreSQL, JSON content stores, Server-Sent Events | Docker, Docker Compose, GitHub Actions, smoke checks |
 
-| Area | Stack |
-| --- | --- |
-| Frontend | React, React Router, TypeScript, Vite |
-| Styling | CSS Modules, shared design tokens, responsive layouts |
-| Visuals | Three.js, optimized responsive imagery |
-| Backend | Node.js HTTP server |
-| Realtime | Server-Sent Events |
-| Data | PostgreSQL and JSON-backed editable content |
-| Auth | Passkey-first admin login, TOTP fallback, recovery codes |
-| Email | SMTP/Nodemailer-based notifications and brief submission |
-| Delivery | Docker, Docker Compose, GitHub Actions, smoke checks |
+Additional implementation areas include CSS Modules, Three.js, SMTP notifications, WebAuthn passkeys, TOTP, recovery codes, secure cookies, and audit logging.
 
-## Screenshots
+## Selected Screens
 
-### Homepage
+<table>
+  <tr>
+    <td width="50%">
+      <strong>Commercial pricing surface</strong><br><br>
+      <img src="./screenshots/pricing.png" alt="VMNorth pricing page">
+    </td>
+    <td width="50%">
+      <strong>Guided project brief</strong><br><br>
+      <img src="./screenshots/project-brief.png" alt="VMNorth guided project brief">
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <strong>Dynamic project presentation</strong><br><br>
+      <img src="./screenshots/brand-websites.png" alt="VMNorth project case page">
+    </td>
+    <td width="50%">
+      <strong>App release destination</strong><br><br>
+      <img src="./screenshots/flipclock-display-product.png" alt="FlipClock Display release page">
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <strong>Public product experience</strong><br><br>
+      <img src="./screenshots/homepage.png" alt="VMNorth homepage">
+    </td>
+    <td width="50%">
+      <strong>Passkey-first admin access</strong><br><br>
+      <img src="./screenshots/admin-login.png" alt="VMNorth admin sign-in">
+    </td>
+  </tr>
+</table>
 
-![Homepage](./screenshots/homepage.png)
+## Mobile Experience
 
-### Apps Catalog
+Captured with a real mobile browser context at a `390 × 844` CSS viewport. Each page was verified with no horizontal document overflow.
 
-![Apps catalog](./screenshots/apps-catalog.png)
+<table>
+  <tr>
+    <td width="33%">
+      <strong>Homepage</strong><br><br>
+      <img src="./screenshots/mobile-home.png" alt="VMNorth mobile homepage">
+    </td>
+    <td width="33%">
+      <strong>Pricing</strong><br><br>
+      <img src="./screenshots/mobile-pricing.png" alt="VMNorth mobile pricing page">
+    </td>
+    <td width="33%">
+      <strong>Project brief</strong><br><br>
+      <img src="./screenshots/mobile-brief.png" alt="VMNorth mobile project brief">
+    </td>
+  </tr>
+  <tr>
+    <td width="33%">
+      <strong>Selected work</strong><br><br>
+      <img src="./screenshots/mobile-work.png" alt="VMNorth mobile project page">
+    </td>
+    <td width="33%">
+      <strong>App release</strong><br><br>
+      <img src="./screenshots/mobile-app.png" alt="VMNorth mobile app release page">
+    </td>
+    <td width="33%">
+      <strong>Admin access</strong><br><br>
+      <img src="./screenshots/mobile-admin.png" alt="VMNorth mobile admin sign-in">
+    </td>
+  </tr>
+</table>
 
-### Product Page
+## Product Surfaces
 
-![FlipClock Display product page](./screenshots/flipclock-display-product.png)
-
-### Admin Sign-In
-
-![Admin sign-in](./screenshots/admin-login.png)
-
-### Support and Privacy Pages
-
-![FlipClock Display support page](./screenshots/flipclock-display-support.png)
-
-![FlipClock Display privacy page](./screenshots/flipclock-display-privacy.png)
+- Public marketing routes for services, process, pricing, regions, and contact
+- Dynamic portfolio pages backed by editable project content
+- Guided brief intake for structured project discovery
+- Visitor chat with session restore, attachments, typing state, presence, and follow-up
+- App catalog with product, support, privacy, and privacy-choice routes
+- Admin workspace for inbox, briefs, analytics, content, portfolio, releases, and system health
 
 ## Engineering Highlights
 
-- Route architecture supports public pages, localized URLs, legal pages, app release pages, and admin routes.
-- Shared layout shells keep header, footer, theme, locale, and support chat behavior consistent across pages.
-- Visitor chat supports session restore, message attachments, typing indicators, presence, and SSE updates.
-- Admin access is designed around passkeys, with TOTP and recovery codes for account recovery.
-- Portfolio content can be edited in the admin workspace and published to public project pages.
-- Admin operations include saved brief review, local analytics summaries, client observability controls, audit log, content CMS overrides, release CI status, system health, and backup/retention views.
-- Production setup uses a single-origin Node server that serves the built frontend and API routes.
-- Release process includes linting, tests, type checks, production build, environment checks, and smoke validation.
+- Shared route shells keep navigation, localization, theme, support chat, and metadata consistent.
+- The Node.js runtime serves the frontend and APIs from one origin.
+- Server-Sent Events provide live visitor and admin updates without a third-party chat service.
+- PostgreSQL stores operational data; inspected JSON stores support editable content and selected admin state.
+- Admin authentication is passkey-first with TOTP and one-time recovery-code fallback.
+- Release verification covers linting, tests, type checks, environment validation, production build, performance budgets, and smoke checks.
 
-## Architecture Snapshot
+## System Shape
 
-```text
-Visitor / Admin Browser
-        |
-        v
-React + Vite frontend
-        |
-        v
-Node.js same-origin server
-        |
-        +-- Public route serving
-        +-- Chat and brief APIs
-        +-- Admin authentication APIs
-        +-- Analytics, content, and operations APIs
-        +-- Portfolio publishing APIs
-        +-- Health and readiness checks
-        |
-        v
-PostgreSQL + JSON runtime files
+```mermaid
+flowchart LR
+    Visitor["Visitors"] --> Web["React + TypeScript"]
+    Admin["Admin workspace"] --> Web
+    Web --> Server["Node.js server"]
+    Server --> Database[("PostgreSQL")]
+    Server --> Content["Editable content stores"]
+    Server --> Email["Email notifications"]
 ```
 
-More detail is available in [docs/ARCHITECTURE_OVERVIEW.md](./docs/ARCHITECTURE_OVERVIEW.md).
+Detailed technical context is available in [Architecture Overview](./docs/ARCHITECTURE_OVERVIEW.md). A short interview walkthrough is available in [Demo Script](./docs/DEMO_SCRIPT.md).
 
-For a fast walkthrough script, use [docs/DEMO_SCRIPT.md](./docs/DEMO_SCRIPT.md).
+## Source Code
 
-## Interview Talking Points
-
-- Built a multilingual React and Node.js product platform with real-time visitor chat and secure admin operations.
-- Implemented custom backend flows instead of relying only on third-party widgets.
-- Designed admin authentication with passkeys, TOTP fallback, recovery codes, secure cookies, and audit logging.
-- Added product operations surfaces for saved briefs, local analytics, content copy, release CI status, health, and retention.
-- Prepared the project for production with Docker, environment templates, deployment documentation, and release checks.
-- Structured the repository so future engineers could understand routes, runtime boundaries, data ownership, and deployment flow.
-
-## Source Code Note
-
-This public repository is intentionally presentation-only. The source code, production configuration, database files, secrets, and private operational materials are not included.
+This repository is intentionally presentation-only. Source code, production configuration, databases, credentials, logs, and private operational materials are not public.
