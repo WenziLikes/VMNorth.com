@@ -2,15 +2,15 @@
 
 Эта папка уже подготовлена как отдельный публичный репозиторий для HR. В ней нет исходного кода проекта.
 
-## 1. Создать новый репозиторий на GitHub
+## 1. Текущий репозиторий
 
-Создай новый пустой репозиторий, например:
+Этот пакет уже подключён к публичному GitHub-репозиторию:
 
 ```text
-vmnorth
+https://github.com/WenziLikes/VMNorth.com
 ```
 
-Не добавляй README, license или `.gitignore` через GitHub UI, потому что они уже подготовлены локально.
+Создавать новый репозиторий не нужно, если этот адрес открывается и принадлежит тебе.
 
 ## 2. Проверить git состояние
 
@@ -21,21 +21,26 @@ cd /Users/viacheslavmurakhin/Downloads/VMNorth.com/hr-github-package
 git status
 ```
 
-В текущем workspace эта папка уже инициализирована как отдельный git-репозиторий. Если ты экспортировал или скопировал папку без `.git`, тогда инициализируй её заново:
+Если есть изменения, добавь их, сделай коммит и отправь на GitHub:
 
 ```bash
-git init
-git branch -M main
 git add .
-git commit -m "Add public portfolio"
+git commit -m "Update VMNorth public project overview"
+git push
 ```
 
-## 3. Подключить GitHub репозиторий
+## 3. Если remote сломался
 
-Замени `YOUR_USERNAME` на свой GitHub username:
+Проверь remote:
 
 ```bash
-git remote add origin https://github.com/YOUR_USERNAME/vmnorth.git
+git remote -v
+```
+
+Если `origin` отсутствует или указывает не туда, выставь правильный адрес:
+
+```bash
+git remote set-url origin https://github.com/WenziLikes/VMNorth.com.git
 git push -u origin main
 ```
 
@@ -44,7 +49,7 @@ git push -u origin main
 Можно отправить:
 
 - ссылку на live demo: `https://vmnorth.com`
-- ссылку на GitHub-репозиторий: `https://github.com/YOUR_USERNAME/vmnorth`
+- ссылку на GitHub-репозиторий: `https://github.com/WenziLikes/VMNorth.com`
 - короткое описание из `docs/HR_SUMMARY_RU.md`
 
 ## Проверка перед публикацией

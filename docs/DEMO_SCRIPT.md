@@ -4,7 +4,7 @@ Use this as a short walkthrough for recruiters, hiring managers, or interviewers
 
 ## 2-Minute Version
 
-VMNorth.com is a production-oriented digital studio platform. It includes a multilingual public website, portfolio case studies, pricing and service pages, client brief intake, visitor chat, and a secure admin workspace with operations views.
+VMNorth.com is a production-oriented digital studio platform. It includes a multilingual public website, portfolio project pages, pricing and service pages, client brief intake, visitor chat, and a secure admin workspace with operations views.
 
 The strongest engineering signals are:
 
